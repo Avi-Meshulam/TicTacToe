@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe</title>
+    <meta charset="utf-8" />
+    <link href="TicTacToe.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <h1>
+            <span style="color:black">T i c</span> - 
+            <span style="color:red">T a c</span> - 
+            <span style="color:black">T o e</span>
+        </h1>
+    </div>
+
+    <div id="gameBoard" style="display:none"></div>
+
+    <div id="settings">
+        <span>Number of Rows/Cols: </span>
+        <input type="number" class="number" id="txtBoardSide" value="3" size="1" min="2" max="10" 
+               oninput="txtBoardSide_Input()" autofocus/>
+        <span>(2-10)</span>
+
+        <br /><br />
+        <div>Starting player:</div>
+        <input type="radio" name="radioPlayer" id="PlayerX" onclick="radioPlayer_Clicked()" checked/><span style="color:black">X</span>
+        <br />
+        <input type="radio" name="radioPlayer" id="PlayerO" onclick="radioPlayer_Clicked()"/><span style="color:red">O</span>
+        
+        <br /><br />
+        <input type="button" class="button" id="btnStart" value="Start" onclick="btnStart_Clicked()" />
+    </div>
+
+    <script src="TicTacToe.js"></script>
+
+</body>
+</html>

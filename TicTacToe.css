@@ -1,0 +1,21 @@
+﻿body{
+    font-family: Tahoma;
+    color:blue;
+}
+
+.number{
+    background-color:lightyellow;
+}
+
+table{
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-spacing:0;
+}
+
+td {
+    border-left: 1px solid;
+    border-top: 1px solid;
+    cursor: pointer;
+    text-align:center;
+}
